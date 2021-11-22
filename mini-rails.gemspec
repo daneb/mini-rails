@@ -28,6 +28,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # Uncomment to register a new dependency of your gem
+  spec.add_dependency "minitest", "~> 5.0"
+  spec.add_dependency "rake", "~> 13.0"
+  spec.add_dependency "rubocop", "~> 1.21"
   spec.add_dependency "sqlite3", "~> 1.3"
 
   # For more information and examples about making a new gem, checkout our
