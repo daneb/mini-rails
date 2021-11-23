@@ -1,5 +1,7 @@
 # lib/base.rb
 
+require "active_record/relation"
+
 module ActiveRecord
   class Base
     def self.abstract_class=(value)
@@ -40,7 +42,11 @@ module ActiveRecord
     end
 
     def self.all
-      find_by_sql("SELECT * FROM #{table_name}")
+      Relation.new(self)
+    end
+
+    def self.where(*args)
+      all.where(*args)
     end
 
     def self.connection
