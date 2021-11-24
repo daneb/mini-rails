@@ -1,0 +1,20 @@
+PATH
+  remote: ../..
+  specs:
+    mini-rails (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  x86_64-darwin-20
+
+DEPENDENCIES
+  mini-rails!
+
+RUBY VERSION
+   ruby 3.0.2p107
+
+BUNDLED WITH
+   2.2.31

@@ -1,7 +1,11 @@
 require_relative "test_helper"
 require "active_record"
-require_relative "muffin_blog/app/models/application_record"
-require_relative "muffin_blog/app/models/post"
+
+class Module
+  def const_missing(name)
+    puts "Trying to load #{name.inspect}"
+  end
+end
 
 class ActiveRecordTest < Minitest::Test
   def setup
