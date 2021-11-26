@@ -1,4 +1,4 @@
-# lib/active_support.rb
+require "active_support/core_ext/string"
 
 module ActiveSupport
   autoload :Dependencies, "active_support/dependencies"

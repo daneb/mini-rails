@@ -39,6 +39,9 @@ PLATFORMS
 
 DEPENDENCIES
   mini-rails!
+  minitest (~> 5.0)
+  rake (~> 13.0)
+  rubocop (~> 1.21)
 
 BUNDLED WITH
    2.2.31
